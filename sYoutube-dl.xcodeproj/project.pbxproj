@@ -13,6 +13,13 @@
 		0E6FEB6D1DF3751E00F17134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FEB6B1DF3751E00F17134 /* Main.storyboard */; };
 		0E6FEB6F1DF3751E00F17134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FEB6E1DF3751E00F17134 /* Assets.xcassets */; };
 		0E6FEB721DF3751E00F17134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FEB701DF3751E00F17134 /* LaunchScreen.storyboard */; };
+		0E6FEB7A1DF378B600F17134 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6FEB791DF378B600F17134 /* NMSSH.framework */; };
+		0E6FEB7D1DF3790800F17134 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6FEB7C1DF3790800F17134 /* libz.tbd */; };
+		0E6FEB7F1DF3791200F17134 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6FEB7E1DF3791200F17134 /* CFNetwork.framework */; };
+		0E6FEB821DF37CE500F17134 /* KeychainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FEB811DF37CE500F17134 /* KeychainController.m */; };
+		0E6FEB841DF37D3E00F17134 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6FEB831DF37D3E00F17134 /* Security.framework */; };
+		0E6FEB881DF37EB600F17134 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FEB861DF37EB600F17134 /* KeychainPasswordItem.swift */; };
+		0E6FEB891DF37EB600F17134 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FEB871DF37EB600F17134 /* KeychainConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,16 @@
 		0E6FEB6E1DF3751E00F17134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E6FEB711DF3751E00F17134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E6FEB731DF3751E00F17134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E6FEB791DF378B600F17134 /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
+		0E6FEB7C1DF3790800F17134 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0E6FEB7E1DF3791200F17134 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0E6FEB801DF37CE500F17134 /* KeychainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainController.h; sourceTree = "<group>"; };
+		0E6FEB811DF37CE500F17134 /* KeychainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainController.m; sourceTree = "<group>"; };
+		0E6FEB831DF37D3E00F17134 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0E6FEB851DF37EB500F17134 /* sYoutube-dl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sYoutube-dl-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E6FEB861DF37EB600F17134 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		0E6FEB871DF37EB600F17134 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		0E6FEB8E1DF3939400F17134 /* sYoutube-dl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "sYoutube-dl.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6FEB841DF37D3E00F17134 /* Security.framework in Frameworks */,
+				0E6FEB7F1DF3791200F17134 /* CFNetwork.framework in Frameworks */,
+				0E6FEB7D1DF3790800F17134 /* libz.tbd in Frameworks */,
+				0E6FEB7A1DF378B600F17134 /* NMSSH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +65,7 @@
 			children = (
 				0E6FEB611DF3751E00F17134 /* sYoutube-dl */,
 				0E6FEB601DF3751E00F17134 /* Products */,
+				0E6FEB7B1DF3790800F17134 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +80,21 @@
 		0E6FEB611DF3751E00F17134 /* sYoutube-dl */ = {
 			isa = PBXGroup;
 			children = (
+				0E6FEB8E1DF3939400F17134 /* sYoutube-dl.entitlements */,
+				0E6FEB861DF37EB600F17134 /* KeychainPasswordItem.swift */,
+				0E6FEB871DF37EB600F17134 /* KeychainConfiguration.swift */,
 				0E6FEB651DF3751E00F17134 /* AppDelegate.h */,
 				0E6FEB661DF3751E00F17134 /* AppDelegate.m */,
 				0E6FEB681DF3751E00F17134 /* ViewController.h */,
 				0E6FEB691DF3751E00F17134 /* ViewController.m */,
+				0E6FEB801DF37CE500F17134 /* KeychainController.h */,
+				0E6FEB811DF37CE500F17134 /* KeychainController.m */,
 				0E6FEB6B1DF3751E00F17134 /* Main.storyboard */,
 				0E6FEB6E1DF3751E00F17134 /* Assets.xcassets */,
 				0E6FEB701DF3751E00F17134 /* LaunchScreen.storyboard */,
 				0E6FEB731DF3751E00F17134 /* Info.plist */,
 				0E6FEB621DF3751E00F17134 /* Supporting Files */,
+				0E6FEB851DF37EB500F17134 /* sYoutube-dl-Bridging-Header.h */,
 			);
 			path = "sYoutube-dl";
 			sourceTree = "<group>";
@@ -77,6 +105,17 @@
 				0E6FEB631DF3751E00F17134 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E6FEB7B1DF3790800F17134 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E6FEB831DF37D3E00F17134 /* Security.framework */,
+				0E6FEB791DF378B600F17134 /* NMSSH.framework */,
+				0E6FEB7E1DF3791200F17134 /* CFNetwork.framework */,
+				0E6FEB7C1DF3790800F17134 /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,7 +150,13 @@
 					0E6FEB5E1DF3751E00F17134 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6E75K4G54T;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -151,9 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6FEB891DF37EB600F17134 /* KeychainConfiguration.swift in Sources */,
+				0E6FEB881DF37EB600F17134 /* KeychainPasswordItem.swift in Sources */,
 				0E6FEB6A1DF3751E00F17134 /* ViewController.m in Sources */,
 				0E6FEB671DF3751E00F17134 /* AppDelegate.m in Sources */,
 				0E6FEB641DF3751E00F17134 /* main.m in Sources */,
+				0E6FEB821DF37CE500F17134 /* KeychainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,24 +320,45 @@
 		0E6FEB771DF3751E00F17134 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "sYoutube-dl/sYoutube-dl.entitlements";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6E75K4G54T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "sYoutube-dl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isklikas.sYoutube-dl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sYoutube-dl/sYoutube-dl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0E6FEB781DF3751E00F17134 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "sYoutube-dl/sYoutube-dl.entitlements";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6E75K4G54T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "sYoutube-dl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isklikas.sYoutube-dl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sYoutube-dl/sYoutube-dl-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
